@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>#김말이_튀김</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <style type="text/css">
+      a:link {color: black;}
+      a:visited {color: black;}
+    </style>
+    <style>
+      body {
+        overflow: hidden;
+      }
+      table {
+        margin: auto;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .menu {
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 30px;
+      }
+      .explain {
+        font-family: 'Noto Serif KR', serif;
+        font-size: 15px;
+      }
+      .taste {
+        font-family: 'Gaegu', cursive;
+        font-size: 17px;
+      }
+    </style>
+    <script>
+      function go() {
+        document.location.href = "../popup.html";
+      }
+    </script>
+  </head>
+  <body onresize="parent.resizeTo(500,600)" onload="parent.resizeTo(500,600)"> 
+  <!--브라우저창 크기 고정시키기-->
+    <table>
+      <tr>
+        <td>
+            <a href="http://www.yes24.com/Product/Goods/67031280" target=_blank><img border=0 src="../media/img/fried.png" style="width: 330px;" /></a><br><br>
+            <a class="menu" href="https://www.youtube.com/watch?v=eTBwn_q8n8A" target=_blank><u>#김말이_튀김</u></a><br>
+          <p class="explain">떡볶이 소스에 찍어서 먹으면 안성맞춤!<br>바삭함이 일품인 김말이 튀김을 당신에게 추천합니다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td height = "80">
+          <form name="survey_form" action="db.php" method ="POST">
+            <input type="button" onclick="go()" value="이전으로"></form>
+          </td>
+        </td>
+      </tr>
+      </tr>
+    </table>
+    
+  </body>
+</html>

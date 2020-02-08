@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>플데네 떡볶이</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+<head>
+<style>
+body {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.explain {
+        font-family: 'Noto Serif KR', serif;
+        font-size: 15px;
+}
+/* Full height image header */
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.scale {
+  transform: scale(1);
+  -webkit-transform: scale(1); /* 크롬 */
+  -moz-transform: scale(1); /* 파이어폭스 */
+  -ms-transform: scale(1); /* 익스플로러 */
+  -o-transform: scale(1); /* 오페라 */
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+.scale:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.img {overflow:hidden }   /* 부모를 벗어나지 않고 내부 이미지만 확대 */
+
+.button-color {
+  background-color: #f1f1f1;
+}
+
+</style>
+<script>
+    function pop(){
+        window.open("popup.html", "pop", "width=500, height=600, left=30, top=30, tollbar=no, status=no, menubar=no location=no, direction=no, location=no, scrollbar=no")
+        } 
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">　<a href="index.html" style = "font-family: 'Do Hyeon', sans-serif; font-size: 35px; ">플데네 떡볶이 <img src = "./media/icon/chef.png" width=30 height=30></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">홈</a>
+      <a href="#team" class="w3-bar-item w3-button">메뉴</a>
+      <a href="#contact" class="w3-bar-item w3-button">고객의 소리</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+<object id="home" data="//www.youtube.com/embed/4JnIYO-x-50?autoplay=1" width=100% height=100% type="text/html"></object>
+
+<!-- Menu Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center" style = "font-family: 'Do Hyeon', sans-serif; font-size: 50px;">플데네 떡볶이 메뉴</h3>
+  <p class="w3-center w3-large explain">고객을 생각하며 정성껏 만듭니다.</p>
+  <div style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[d8f63788df9d9cee502]/0" target=_blank><img border=0 src="./media/img/CHADOL.gif" alt="차돌떡볶이" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>차돌 떡볶이</h3>
+          <p class="w3-opacity">SPICY : წწწწ<br>SWEET : ❦❦❦</p>
+          <p>ORIGINAL에 차돌을 더해 더 깊은 맛을<br> 느낄 수 있습니다.</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking1');">좋아요 <i id="liking1" class="far fa-heart"></i></button></p> 
+          <!--HTML 안에서 자바스크립트 함수 구현할 때 매개변수 작은 따옴표로 넣어야 함-->
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[29015993a09e344f829]/0" target=_blank><img border=0 src="./media/img/GGARBO.jpg" alt="까르보나라떡볶이" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>까르보나라 떡볶이</h3>
+          <p class="w3-opacity">SPICY : წ<br>SWEET : ❦❦❦❦</p>
+          <p>이탈리아 갬성 정통 까르보나라의 맛을<br> 그대로 담았습니다.</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking2');">좋아요 <i id="liking2" class="far fa-heart"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[a8f3a43e073c144ba14]/0" target=_blank><img src="./media/img/CHEESES.jpg" alt="치즈떡볶이" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>치즈 떡볶이</h3>
+          <p class="w3-opacity">SPICY : წწწწ<br>SWEET : ❦❦❦</p>
+          <p>아낌없이 주는 플데! 풍부한 치즈의<br> 고소한 맛! 지금 느껴보세요.</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking3');">좋아요 <i id="liking3" class="far fa-heart"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[5a50c59ba270d31f455]/0" target=_blank><img src="./media/img/ZZAJANG.jpg" alt="짜장떡볶이" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>짜장 떡볶이</h3>
+          <p class="w3-opacity">SPICY : წწწ<br>SWEET : ❦❦❦</p>
+          <p>떡볶이도 먹고 싶고, 짜장도 먹고 싶을 땐? 단연, 플데 짜장 떡볶이!</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking4');">좋아요 <i id="liking4" class="far fa-heart"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[8139db9adc36849c027]/0" target=_blank><img border=0 src="./media/img/setA.jpg" alt="플데세트A" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>플데 A세트</h3>
+          <p>치즈떡볶이(or 어묵)<br>
+            만두 / 계란 / 당면</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking5');">좋아요 <i id="liking5" class="far fa-heart"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[6974fc1350f3d6d8cd8]/0" target=_blank><img border=0 src="./media/img/setB.jpg" alt="플데세트B" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>플데 B세트</h3>
+          <p>치즈떡볶이(or 어묵)<br>
+            만두 / 햄추가 / 당면 / 쿨피스</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking6');">좋아요 <i id="liking6" class="far fa-heart"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[bc1dffa1da5cc7ee81f]/0" target=_blank><img border=0 src="./media/img/setC.jpg" alt="플데세트C" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>플데 C세트</h3>
+          <p>치즈떡볶이(or 어묵)<br>
+            만두 / 돈가스 / 치즈추가</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking7');">좋아요 <i id="liking7" class="far fa-heart"></i></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <div class="img"><div class="scale"><a href="http://www.xn--331b22lqmay2oc0g.kr/menu/#iLightbox[acab304a2b9b1648b54]/0" target=_blank><img border=0 src="./media/img/setD.jpg" alt="플데세트D" style="width:100%"></a></div></div>
+        <div class="w3-container" style="background-color: white;">
+          <h3>플데 D세트</h3>
+          <p>치즈떡볶이(or 어묵)<br>
+            만두 / 계란 / 당면 / 주먹김밥 / 쿨피스</p>
+          <p><button class="w3-button button-color w3-block" onclick="changeOfLiking('liking8');">좋아요 <i id="liking8" class="far fa-heart"></i></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center" style = "font-family: 'Do Hyeon', sans-serif; font-size: 50px;">고객의 소리</h3>
+  <p class="w3-center w3-large explain">언제나 고객의 소리에 귀를 기울이겠습니다.</p>
+  <div id="inputBox" style="margin-top:48px">
+      <p><input id="name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <!-- document.getElementById('name').value -->
+      <p><input id="email" class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <!-- document.getElementById('email').value -->
+      <p><input id="subject" class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <!-- document.getElementById('subject').value -->
+      <p><input id="message" class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <!-- document.getElementById('message').value -->
+      <p>
+        <button onclick="inputForm('name', 'email', 'subject', 'message');" class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+  </div>
+  <div id="result" style="display: none;">
+  <!--SEND MESSAGE 클릭시 보이는 영역-->
+  <p><table class="w3-input w3-border w3-large explain" style="background-color: white;font-family: 'Sunflower'', cursive; font-size: 60px;"><tr><td><br><br>입력한 내용을 확인해주세요.<br><br>
+    성함 : <span id="resultName"></span><br>
+    이메일 : <span id="resultEmail"></span><br>
+    제목 : <span id="resultSubject"></span><br>
+    내용 : <span id="resultMessage"></span><br>
+    <br> 귀하의 소중한 의견 감사합니다.<br><br><br>
+  </td></tr></table></p>
+  <button id="back" onclick="backForm('name', 'email', 'subject', 'message');" class="w3-button w3-black" type="submit">
+  BACK <i class="fa fa-paper-plane"></i>
+  </button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>위로</a>
+</footer>
+    <script>
+        window.onload = pop()
+    </script>
+    <script>
+      function changeOfLiking(liking){
+        if(document.getElementById(liking).classList.contains('far')){
+            document.getElementById(liking).classList.remove('far');
+            document.getElementById(liking).classList.add('fas');
+            window.alert("좋아해주셔서 감사합니다!");
+          }
+        else{
+            document.getElementById(liking).classList.remove('fas');
+            document.getElementById(liking).classList.add('far');
+            window.alert("좋아요가 취소되었습니다");
+          }
+      }
+    </script>
+    <script>
+      function inputForm(name, email, subject, message){
+        if(document.getElementById(name).value === "" ||
+           document.getElementById(email).value === "" ||
+           document.getElementById(subject).value === "" ||
+           document.getElementById(message).value === ""){
+          alert("입력하지 않은 항목이 있습니다.")
+        }
+        else{
+          document.getElementById("inputBox").style.display = "none";
+          document.getElementById("result").style.display = "block";
+          document.getElementById("resultName").innerHTML = document.getElementById('name').value;
+          document.getElementById("resultEmail").innerHTML = document.getElementById('email').value;
+          document.getElementById("resultSubject").innerHTML = document.getElementById('subject').value;
+          document.getElementById("resultMessage").innerHTML = document.getElementById('message').value;
+        }
+      }
+      function backForm(name, email, subject, message){
+        document.getElementById("inputBox").style.display = "block";
+        document.getElementById("result").style.display = "none";
+        document.getElementById(name).value = "";
+        document.getElementById(email).value = "";
+        document.getElementById(subject).value = "";
+        document.getElementById(message).value = "";
+      }
+    </script>
+</body>
+</html>

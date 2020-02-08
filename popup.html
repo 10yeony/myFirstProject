@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    
+    <title>소리를 맛보다!</title>
+    <script>
+        function go(){
+         obj=document.survey_form.food;
+         for(i=0;i<obj.length;i++){
+          if(obj[i].checked){
+           switch(obj[i].value){
+            case "a" : document.location.href='./popup/a.html';break;
+            case "b" : document.location.href='./popup/b.html';break;
+            case "c" : document.location.href='./popup/c.html';break;
+           }
+           break;
+          }
+         }
+        }
+        function setCookie( name, value, expiredays ){
+            var todayDate = new Date();
+            todayDate.setDate( todayDate.getDate() + expiredays );
+            document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }
+        function checkItDo(){
+            if ( document.forms['myform'].event.checked ) {
+                setCookie("memo", "no" , 1); // 1일 간 쿠키적용
+                }
+            return true;
+            }
+        function closeWin(){
+            if (checkItDo()) window.close();
+            }
+       </script>
+    <style>
+        body {
+            height: 100vh; /* 패턴 반복을 막기 위해 viewport height를 100% 로 */
+            background-image: linear-gradient(
+            to top right, 
+            #c9ffbf 0%,
+            #ffafbd 100%
+            );
+            overflow: hidden;
+        }
+
+        .title{
+            margin: auto;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%); 
+            transform: translate(-50%, -50%);
+        }
+
+        .vote {
+            margin: auto;
+            position: absolute;
+            top: 53%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%); 
+            transform: translate(-50%, -50%);
+        }
+
+        form{
+            position: absolute;
+            top: 90%;
+            left: 55%;
+        }
+
+        audio {
+            width: 250px;
+            height: 30px;
+        }
+
+        .colspan {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body onunload="checkItDo()" onbeforeunload="checkItDo()" onresize="parent.resizeTo(500,600)" onload="parent.resizeTo(500,600)"> 
+    <!--하루 동안 창 닫기-->
+    <!--브라우저창 크기 고정시키기-->
+    <div class = "title" style = "font-size: 45px; font-family: 'Do Hyeon', sans-serif;">소리를 맛보다!<br><br></div>
+    <div class = vote>
+        가장 마음에 드는 ASMR을 뽑아주세요. <br><br>
+            <table>
+                <form name="survey_form" action="db.php" method ="POST">
+                <tr>
+                    <td height="50">
+                        <input type="radio" name="food" value="a">
+                    </td>
+                    <td height="50">
+                        <audio controls>
+                            <source src="../media/audio/a.mp3" type="audio/mp3"><!--떡볶이 ASMR-->
+                        </audio><br>
+                        
+                    </td>
+                </tr> 
+                <tr>
+                    <td height="50">
+                        <input type="radio" name="food" value="b">
+                    </td>
+                    <td height="50">
+                        <audio controls>
+                            <source src="../media/audio/b.mp3" type="audio/mp3"><!--중국당면 ASMR-->
+                        </audio><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="50">
+                        <input type="radio" name="food" value="c">
+                    </td>
+                    <td height="50">
+                        <audio controls>
+                            <source src="../media/audio/c.mp3" type="audio/mp3"><!--튀김 ASMR-->
+                        </audio><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="70" class = "colspan" colspan="2"><input class="button" type="button" onclick="go()" value="pick me!"><!--가로병합--></td>
+                </tr>
+            
+            </table>
+    </form>
+</div>
+<br><br>
+<form name="myform">
+    <input type="checkbox" name="event" onClick="closeWin()"><a style="font-family: 'Nanum Gothic Coding', monospace; font-size: 15px;">오늘 하루 동안 창 닫기</a>
+</form>
+</body>
+</html>
